@@ -1,0 +1,23 @@
+{
+  "projectPath": "brik/brik",
+  "projectId": 2,
+  "defaultBranch": "main",
+  "ciValid": true,
+  "ciMissing": true,
+  "ciConfigSource": "remote",
+  "pipelineOriginMetrics": {
+    "jobTotal": 0,
+    "jobHardcoded": 0,
+    "originTotal": 0,
+    "originComponent": 0,
+    "originLocal": 0,
+    "originProject": 0,
+    "originRemote": 0,
+    "originTemplate": 0,
+    "originGitLabCatalog": 0,
+    "originOutdated": 0
+  },
+  "threshold": 0,
+  "compliance": 0,
+  "passed": true
+}

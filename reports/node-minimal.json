@@ -1,0 +1,227 @@
+{
+  "projectPath": "brik/node-minimal",
+  "projectId": 4,
+  "defaultBranch": "main",
+  "ciValid": true,
+  "ciMissing": false,
+  "ciConfigSource": "remote",
+  "pipelineOriginMetrics": {
+    "jobTotal": 9,
+    "jobHardcoded": 0,
+    "originTotal": 11,
+    "originComponent": 0,
+    "originLocal": 9,
+    "originProject": 1,
+    "originRemote": 0,
+    "originTemplate": 0,
+    "originGitLabCatalog": 0,
+    "originOutdated": 0
+  },
+  "pipelineImageMetrics": {
+    "total": 9
+  },
+  "imageForbiddenTagsResult": {
+    "issues": [],
+    "metrics": {
+      "total": 9,
+      "usingForbiddenTags": 0,
+      "pinnedByDigest": 9,
+      "ciInvalid": 0,
+      "ciMissing": 0
+    },
+    "compliance": 100,
+    "version": "0.3.0",
+    "ciValid": true,
+    "ciMissing": false,
+    "skipped": false,
+    "mustBePinnedByDigest": true
+  },
+  "imageAuthorizedSourcesResult": {
+    "issues": [],
+    "metrics": {
+      "total": 9,
+      "authorized": 9,
+      "unauthorized": 0,
+      "ciInvalid": 0,
+      "ciMissing": 0
+    },
+    "compliance": 100,
+    "version": "0.1.0",
+    "ciValid": true,
+    "ciMissing": false,
+    "skipped": false
+  },
+  "branchProtectionResult": {
+    "enabled": true,
+    "compliance": 100,
+    "version": "0.2.0",
+    "data": [
+      {
+        "branchName": "main",
+        "default": true,
+        "protected": true
+      }
+    ],
+    "metrics": {
+      "branches": 1,
+      "branchesToProtect": 1,
+      "unprotectedBranches": 0,
+      "nonCompliantBranches": 0,
+      "totalProtectedBranches": 1,
+      "projectsCorrectlyProtected": 1
+    }
+  },
+  "hardcodedJobsResult": {
+    "issues": [],
+    "metrics": {
+      "total": 9,
+      "hardcodedJobs": 0,
+      "ciInvalid": 0,
+      "ciMissing": 0
+    },
+    "compliance": 100,
+    "version": "0.1.0",
+    "ciValid": true,
+    "ciMissing": false,
+    "skipped": false
+  },
+  "outdatedIncludesResult": {
+    "issues": [],
+    "metrics": {
+      "total": 10,
+      "originOutdated": 0,
+      "ciInvalid": 0,
+      "ciMissing": 0
+    },
+    "compliance": 100,
+    "version": "0.1.0",
+    "ciValid": true,
+    "ciMissing": false,
+    "skipped": false
+  },
+  "forbiddenVersionsIncludesResult": {
+    "issues": [],
+    "metrics": {
+      "total": 1,
+      "usingForbiddenVersion": 0,
+      "usingAuthorizedVersion": 1
+    },
+    "compliance": 100,
+    "version": "0.1.0",
+    "ciValid": true,
+    "ciMissing": false,
+    "skipped": false
+  },
+  "requiredComponentsResult": {
+    "requirementGroups": [],
+    "issues": [],
+    "overriddenIssues": [],
+    "metrics": {
+      "totalGroups": 0,
+      "satisfiedGroups": 0,
+      "anySatisfiedGroup": false,
+      "ciInvalid": 0,
+      "ciMissing": 0
+    },
+    "compliance": 100,
+    "version": "0.2.0",
+    "ciValid": true,
+    "ciMissing": false,
+    "skipped": true
+  },
+  "requiredTemplatesResult": {
+    "requirementGroups": [],
+    "issues": [],
+    "overriddenIssues": [],
+    "metrics": {
+      "totalGroups": 0,
+      "satisfiedGroups": 0,
+      "anySatisfiedGroup": false,
+      "ciInvalid": 0,
+      "ciMissing": 0
+    },
+    "compliance": 100,
+    "version": "0.2.0",
+    "ciValid": true,
+    "ciMissing": false,
+    "skipped": true
+  },
+  "debugTraceResult": {
+    "issues": [],
+    "metrics": {
+      "totalVariablesChecked": 7,
+      "forbiddenFound": 0
+    },
+    "compliance": 100,
+    "version": "0.1.0",
+    "ciValid": true,
+    "ciMissing": false,
+    "skipped": false
+  },
+  "variableInjectionResult": {
+    "issues": [],
+    "metrics": {
+      "jobsChecked": 9,
+      "totalScriptLinesChecked": 10,
+      "unsafeExpansionsFound": 0
+    },
+    "compliance": 100,
+    "version": "0.1.0",
+    "ciValid": true,
+    "ciMissing": false,
+    "skipped": false
+  },
+  "securityJobsWeakenedResult": {
+    "issues": [],
+    "metrics": {
+      "securityJobsFound": 0,
+      "weakenedJobs": 0
+    },
+    "compliance": 100,
+    "version": "0.1.0",
+    "ciValid": true,
+    "ciMissing": false,
+    "skipped": false
+  },
+  "unverifiedScriptsResult": {
+    "issues": [],
+    "metrics": {
+      "jobsChecked": 9,
+      "totalScriptLinesChecked": 10,
+      "unverifiedScriptsFound": 0
+    },
+    "compliance": 100,
+    "version": "0.1.0",
+    "ciValid": true,
+    "ciMissing": false,
+    "skipped": false
+  },
+  "jobVariablesOverrideResult": {
+    "issues": [],
+    "metrics": {
+      "totalVariablesChecked": 0,
+      "overriddenFound": 0
+    },
+    "compliance": 100,
+    "version": "0.1.0",
+    "ciValid": true,
+    "ciMissing": false,
+    "skipped": false
+  },
+  "dockerInDockerResult": {
+    "issues": [],
+    "metrics": {
+      "totalJobsChecked": 9,
+      "dindServicesFound": 0,
+      "insecureDaemonFound": 0
+    },
+    "compliance": 100,
+    "version": "0.1.0",
+    "ciValid": true,
+    "ciMissing": false,
+    "skipped": false
+  },
+  "threshold": 0,
+  "compliance": 100,
+  "passed": true
+}
