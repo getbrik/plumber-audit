@@ -79,6 +79,9 @@ plumber-audit/
 ## Usage
 
 ```bash
-export GITLAB_TOKEN=<your-gitlab-pat>
-plumber analyze --gitlab-url http://localhost:8929 --project brik/node-minimal
+# Load GITLAB_PAT from briklab .env
+source ../briklab/.env
+export GITLAB_TOKEN="$GITLAB_PAT"
+
+plumber analyze --gitlab-url http://gitlab.briklab.test:8929 --project brik/node-minimal
 ```
