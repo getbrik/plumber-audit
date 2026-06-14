@@ -1,0 +1,461 @@
+{
+  "projectPath": "brik/node-deploy-signed",
+  "projectId": 8,
+  "defaultBranch": "main",
+  "ciConfigSource": "remote",
+  "ciValid": true,
+  "ciMissing": false,
+  "pipelineOriginMetrics": {
+    "jobHardcoded": 0,
+    "jobTotal": 14,
+    "originComponent": 0,
+    "originGitLabCatalog": 0,
+    "originLocal": 14,
+    "originOutdated": 0,
+    "originProject": 1,
+    "originRemote": 0,
+    "originTemplate": 0,
+    "originTotal": 16
+  },
+  "pipelineImageMetrics": {
+    "total": 14
+  },
+  "compliance": 83.33333333333333,
+  "threshold": 100,
+  "passed": false,
+  "plumberScore": {
+    "profileId": "scoring-v3",
+    "counts": {
+      "critical": 1,
+      "high": 14,
+      "medium": 5,
+      "low": 0
+    },
+    "rawPoints": 18.479053799905884,
+    "finalPoints": 18.479053799905884,
+    "score": "E",
+    "criticalMalusApplied": true,
+    "criticalMalusMax": 30,
+    "losses": [
+      {
+        "severity": "critical",
+        "count": 1,
+        "cappedLoss": 25
+      },
+      {
+        "severity": "high",
+        "count": 14,
+        "cappedLoss": 43.55516191543203
+      },
+      {
+        "severity": "medium",
+        "count": 5,
+        "cappedLoss": 12.965784284662085
+      }
+    ],
+    "codeLosses": [
+      {
+        "code": "ISSUE-102",
+        "severity": "medium",
+        "count": 5,
+        "weight": 6,
+        "cap": 20,
+        "uncappedLoss": 12.965784284662085,
+        "cappedLoss": 12.965784284662085
+      },
+      {
+        "code": "ISSUE-103",
+        "severity": "high",
+        "count": 14,
+        "weight": 15,
+        "cap": 60,
+        "uncappedLoss": 43.55516191543203,
+        "cappedLoss": 43.55516191543203
+      },
+      {
+        "code": "ISSUE-501",
+        "severity": "critical",
+        "count": 1,
+        "weight": 25,
+        "uncappedLoss": 25,
+        "cappedLoss": 25
+      }
+    ]
+  },
+  "branchProtectionResult": {
+    "compliance": 0,
+    "data": [
+      {
+        "branchName": "main",
+        "default": true,
+        "protected": false
+      }
+    ],
+    "enabled": true,
+    "issues": [
+      {
+        "branchName": "main",
+        "code": "ISSUE-501",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-501",
+        "type": "unprotected"
+      }
+    ],
+    "metrics": {
+      "branches": 1,
+      "branchesToProtect": 1,
+      "nonCompliantBranches": 0,
+      "projectsCorrectlyProtected": 0,
+      "totalProtectedBranches": 0,
+      "unprotectedBranches": 1
+    },
+    "version": "0.2.0"
+  },
+  "debugTraceResult": {
+    "ciMissing": false,
+    "ciValid": true,
+    "compliance": 100,
+    "issues": [],
+    "metrics": {
+      "forbiddenFound": 0,
+      "totalVariablesChecked": 29
+    },
+    "skipped": false,
+    "version": "0.1.0"
+  },
+  "dockerInDockerResult": {
+    "ciMissing": false,
+    "ciValid": true,
+    "compliance": 100,
+    "issues": [],
+    "metrics": {
+      "dindServicesFound": 0,
+      "insecureDaemonFound": 0,
+      "totalJobsChecked": 14
+    },
+    "skipped": false,
+    "version": "0.1.0"
+  },
+  "forbiddenVersionsIncludesResult": {
+    "ciMissing": false,
+    "ciValid": true,
+    "compliance": 100,
+    "issues": [],
+    "metrics": {
+      "total": 15,
+      "usingAuthorizedVersion": 15,
+      "usingForbiddenVersion": 0
+    },
+    "skipped": false,
+    "version": "0.1.0"
+  },
+  "hardcodedJobsResult": {
+    "ciMissing": false,
+    "ciValid": true,
+    "compliance": 100,
+    "issues": [],
+    "metrics": {
+      "ciInvalid": 0,
+      "ciMissing": 0,
+      "hardcodedJobs": 0,
+      "total": 14
+    },
+    "skipped": false,
+    "version": "0.1.0"
+  },
+  "imageAuthorizedSourcesResult": {
+    "ciMissing": false,
+    "ciValid": true,
+    "compliance": 100,
+    "issues": [],
+    "metrics": {
+      "authorized": 14,
+      "ciInvalid": 0,
+      "ciMissing": 0,
+      "total": 14,
+      "unauthorized": 0
+    },
+    "skipped": false,
+    "version": "0.1.0"
+  },
+  "imageForbiddenTagsResult": {
+    "ciMissing": false,
+    "ciValid": true,
+    "compliance": 0,
+    "issues": [
+      {
+        "code": "ISSUE-102",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-102",
+        "job": ".brik-stage",
+        "link": "ghcr.io/getbrik/brik-runner-base:latest",
+        "tag": "latest",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-103",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-103",
+        "job": ".brik-stage",
+        "link": "ghcr.io/getbrik/brik-runner-base:latest",
+        "tag": "latest",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-103",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-103",
+        "job": "brik-build",
+        "link": "unknown/${BRIK_IMG_STACK}",
+        "tag": "",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-103",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-103",
+        "job": "brik-container-scan",
+        "link": "unknown/${BRIK_IMG_SCANNER}",
+        "tag": "",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-103",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-103",
+        "job": "brik-deploy",
+        "link": "unknown/${BRIK_IMG_DEPLOY}",
+        "tag": "",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-102",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-102",
+        "job": "brik-init",
+        "link": "ghcr.io/getbrik/brik-runner-base:latest",
+        "tag": "latest",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-103",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-103",
+        "job": "brik-init",
+        "link": "ghcr.io/getbrik/brik-runner-base:latest",
+        "tag": "latest",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-103",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-103",
+        "job": "brik-lint",
+        "link": "unknown/${BRIK_IMG_STACK}",
+        "tag": "",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-102",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-102",
+        "job": "brik-notify",
+        "link": "ghcr.io/getbrik/brik-runner-base:latest",
+        "tag": "latest",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-103",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-103",
+        "job": "brik-notify",
+        "link": "ghcr.io/getbrik/brik-runner-base:latest",
+        "tag": "latest",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-103",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-103",
+        "job": "brik-package",
+        "link": "unknown/${BRIK_IMG_STACK}",
+        "tag": "",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-102",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-102",
+        "job": "brik-plan",
+        "link": "ghcr.io/getbrik/brik-runner-base:latest",
+        "tag": "latest",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-103",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-103",
+        "job": "brik-plan",
+        "link": "ghcr.io/getbrik/brik-runner-base:latest",
+        "tag": "latest",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-103",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-103",
+        "job": "brik-promote",
+        "link": "unknown/${BRIK_IMG_DEPLOY}",
+        "tag": "",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-102",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-102",
+        "job": "brik-release",
+        "link": "ghcr.io/getbrik/brik-runner-base:latest",
+        "tag": "latest",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-103",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-103",
+        "job": "brik-release",
+        "link": "ghcr.io/getbrik/brik-runner-base:latest",
+        "tag": "latest",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-103",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-103",
+        "job": "brik-sast",
+        "link": "unknown/${BRIK_IMG_ANALYSIS}",
+        "tag": "",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-103",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-103",
+        "job": "brik-scan",
+        "link": "unknown/${BRIK_IMG_SCANNER}",
+        "tag": "",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      },
+      {
+        "code": "ISSUE-103",
+        "docUrl": "https://getplumber.io/docs/cli/issues/ISSUE-103",
+        "job": "brik-test",
+        "link": "unknown/${BRIK_IMG_STACK}",
+        "tag": "",
+        "url": "http://gitlab.briklab.test:8929/brik/node-deploy-signed/-/blob/892dcc95a67a7e951f2621370cdad7887249ddd5/.gitlab-ci.yml#L20"
+      }
+    ],
+    "metrics": {
+      "ciInvalid": 0,
+      "ciMissing": 0,
+      "notPinnedByDigest": 14,
+      "pinnedByDigest": 0,
+      "total": 14,
+      "usingForbiddenTags": 5
+    },
+    "mustBePinnedByDigest": true,
+    "skipped": false,
+    "version": "0.4.0"
+  },
+  "jobVariablesOverrideResult": {
+    "ciMissing": false,
+    "ciValid": true,
+    "compliance": 100,
+    "issues": [],
+    "metrics": {
+      "overriddenFound": 0,
+      "totalVariablesChecked": 17
+    },
+    "skipped": false,
+    "version": "0.1.0"
+  },
+  "leakedSecretsResult": {
+    "ciMissing": false,
+    "ciValid": true,
+    "compliance": 100,
+    "issues": [],
+    "metrics": {
+      "hitsFound": 0
+    },
+    "skipped": true,
+    "version": "0.1.0"
+  },
+  "outdatedIncludesResult": {
+    "ciMissing": false,
+    "ciValid": true,
+    "compliance": 100,
+    "issues": [],
+    "metrics": {
+      "ciInvalid": 0,
+      "ciMissing": 0,
+      "originOutdated": 0,
+      "total": 15
+    },
+    "skipped": false,
+    "version": "0.1.0"
+  },
+  "requiredComponentsResult": {
+    "ciMissing": false,
+    "ciValid": true,
+    "compliance": 100,
+    "issues": [],
+    "metrics": {
+      "anySatisfiedGroup": false,
+      "ciInvalid": 0,
+      "ciMissing": 0,
+      "satisfiedGroups": 0,
+      "totalGroups": 0
+    },
+    "overriddenIssues": [],
+    "requirementGroups": [],
+    "skipped": true,
+    "version": "0.2.0"
+  },
+  "requiredTemplatesResult": {
+    "ciMissing": false,
+    "ciValid": true,
+    "compliance": 100,
+    "issues": [],
+    "metrics": {
+      "anySatisfiedGroup": false,
+      "ciInvalid": 0,
+      "ciMissing": 0,
+      "satisfiedGroups": 0,
+      "totalGroups": 0
+    },
+    "overriddenIssues": [],
+    "requirementGroups": [],
+    "skipped": true,
+    "version": "0.2.0"
+  },
+  "securityJobsWeakenedResult": {
+    "ciMissing": false,
+    "ciValid": true,
+    "compliance": 100,
+    "issues": [],
+    "metrics": {
+      "securityJobsFound": 1,
+      "weakenedJobs": 0
+    },
+    "skipped": false,
+    "version": "0.1.0"
+  },
+  "unverifiedScriptsResult": {
+    "ciMissing": false,
+    "ciValid": true,
+    "compliance": 100,
+    "issues": [],
+    "metrics": {
+      "jobsChecked": 14,
+      "totalScriptLinesChecked": 29,
+      "unverifiedScriptsFound": 0
+    },
+    "skipped": false,
+    "version": "0.1.0"
+  },
+  "variableInjectionResult": {
+    "ciMissing": false,
+    "ciValid": true,
+    "compliance": 100,
+    "issues": [],
+    "metrics": {
+      "jobsChecked": 14,
+      "totalScriptLinesChecked": 29,
+      "unsafeExpansionsFound": 0
+    },
+    "skipped": false,
+    "version": "0.1.0"
+  },
+  "analyzeBranch": "main",
+  "headCommitSha": "892dcc95a67a7e951f2621370cdad7887249ddd5"
+}
